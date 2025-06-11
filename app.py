@@ -9,6 +9,7 @@ st.title("🏠 Real Estate Price Prediction App")
 st.markdown("Enter property details below to estimate the price per unit area.")
 
 # Input fields
+transaction_date = st.slider("Transaction Date (e.g., 2013.250 = March 2013)", 2012.0, 2015.0, 2013.25, step=0.01)
 house_age = st.slider("House Age (in years)", 0.0, 50.0, 10.0)
 distance_to_mrt = st.slider("Distance to Nearest MRT Station (meters)", 0.0, 10000.0, 300.0)
 num_convenience = st.slider("Number of Convenience Stores Nearby", 0, 10, 2)
