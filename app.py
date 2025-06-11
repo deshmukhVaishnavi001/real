@@ -26,6 +26,7 @@ model = load_model()
 # Predict
 if st.button("Predict Price"):
     input_data = pd.DataFrame({
+        "X1 transaction date": [transaction_date],
         "X2 house age": [house_age],
         "X3 distance to the nearest MRT station": [distance_to_mrt],
         "X4 number of convenience stores": [num_convenience],
